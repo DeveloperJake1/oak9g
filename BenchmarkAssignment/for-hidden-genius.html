@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <!--Welcome to the source code! Website has been Created by Developer Jake.
+    /// \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    \\\ /// /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    /// \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    \\\ /// /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    \\\ \\\ \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\
+    \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ /// \\\ ///
+    -->
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Benchmark Assignment">
+        <meta name="author" content="DeveloperJake">
+        <link rel="icon" href="https://i.ibb.co/nnL99ns/IMG-0180.jpg">
+    <title>
+       Benchmark Assignment
+    </title>
+    </head>
+    <style>
+		:root{
+		    --overlay-color-1: #ff0000;
+		    --overlay-color-2: #0000ff;
+		    --anim-duration: 2s;
+		}
+
+	/*	#gradient {
+		    opacity: 0.8;
+		    width: 100%;
+
+		    height:100%;
+		}
+
+		#gradient:after,
+		#gradient:before {
+		    content: '';
+		    display: block;
+		    position: absolute;
+		    top: 0; bottom: 0; left: 0; right: 0;
+		}
+
+		#gradient:before {
+		    background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+		    animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+		}
+
+		#gradient:after {
+		    background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+		    animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+		}
+
+		@keyframes OpacityAnim {
+		    0%{opacity: 1.0}
+		    100%{opacity: 0.0}
+		}*/
+
+        body::-webkit-scrollbar {
+          width: 12px;            
+        }
+        
+        body::-webkit-scrollbar-track {
+          background: #333;        
+        }
+        
+        body::-webkit-scrollbar-thumb {
+          background-color: black;   
+          border-radius: 20px;       
+          
+          border: 3px solid gold;  
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            margin:0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+ 
+        }
+        .font{
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        p{
+            margin:20px;
+            
+        }
+        #version{
+            
+        }
+        #grad {
+            background-image: linear-gradient(to right, cyan, blue);
+            width: 100%;
+            height: 100%;
+        }
+
+        .topnav {
+          background-color: #333;
+          overflow: hidden;
+            position: fixed; 
+          top: 0; 
+          z-index: 20;
+          width: 100%; 
+
+        }
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          padding: 30px 32px;
+            text-decoration: underline dotted;       
+            font-size:20px;
+        }
+        
+        .topnav a:hover {
+          background-color: yellow;
+          color: black;
+        }
+        .container {
+          left: 0;
+          right: 0;
+         }
+        
+        .main {
+              position:relative;
+              width: 870px;
+              min-height: 0px;
+             padding-top:15px;
+             margin-bottom:0;
+
+        }
+        
+        .main:before {
+          content:'';
+          position: absolute;
+          width: 870px;
+          height: 250%;
+          z-index: -1;
+          margin:auto;
+          border: 20px dashed gray;
+          left:0;
+          background-color:rgba(255,255,255,.6);
+        }        
+        .topnav a.active {
+          background-color: #b07500;
+          color: white;
+        }
+
+        .center {
+          display: block;
+            margin:auto;
+          width: 50%;
+        }
+        .centered{
+            margin:auto;
+            /*margin-right:20px;*/
+        }
+        .centeredA{
+            margin:auto;
+        }
+        #icon-image{
+            width:80px;
+            border-color:linear-gradient(yellow, white);
+            border:ridge gold;
+        }
+        #test{
+            margin-left: 80%;
+            margin-right:0px;
+        }
+        .box1{
+            background-color:rgba(157, 157, 157, 0.6);
+        }
+        .button2{
+            background-color:#8C3B00;
+            foreground-color:#CF0000;
+            link-color:#ae0202;
+            border-color:e17300;
+            width:216px;
+            height:175px;
+        }
+        .detail13{
+            margin = 90vw;
+        }
+       .overlay {
+        position: absolute;
+        z-index: 10;
+      }       
+    </style>
+    <body id = "grad" style = "background-color:#333333; color:#d6d6d6;">
+
+        <script>
+
+       </script>
+ 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class= "horizontal">
+            <div class="topnav" id="myTopnav">
+              <img src ="https://i.ibb.co/nnL99ns/IMG-0180.jpg" id="icon-image" align=left width="80" height="77">
+                <a id = "navtext" class="active" href="for-hidden-genius.html">About</a>
+
+                <a id = "navtext" href="forms.html">Forms & Javascript</a>
+                <a id = "navtext" href="bug-reports.html">Leadership</a>
+            </div>
+            <br>
+            <br>
+            <br>         
+            <br>
+            <br>
+            <hr color=gold>
+            <hr color=gold>
+            <br>
+            <div class="container">
+              <div class="main" style = "margin:auto">
+              	<br>
+                  <h1 style="font-size:1.5vw;color:black;text-align:center;margin:auto;">About Me   </h1>
+                  <iframe src="https://www.youtube.com/embed/NFKY4T2VkD8" title="YouTube video player" style ="margin:auto 2%"width="875" height="490" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no" ></iframe>
+                <hr width="100%"style="margin:auto 2%" color=#ad0f03>
+              </div>
+
+            <br>
+            <div class="overlay">
+                
+               <table style = "background-color:rgba(255,30,30,0.4); margin-left: auto;">
+                    <tr style = "background-color:#333;">
+                        <td>
+
+                        <img src="https://i.ibb.co/B2XJn88/IMG-0571.jpg" alt="IMG-0571" width="300" height="250">
+                    </td></tr>
+                    <tr style = "background-color:#333;">
+                        <td>
+                         <img src="https://i.ibb.co/KLrddLj/IMG-0180.jpg" alt="IMG-0180" width="300" height="300">
+                    </td></tr>
+                    <tr style = "background-color:#333; margin-left:-100px">
+                        <td>
+                         <img src="https://i.ibb.co/fDfx1Gd/Paranormal-Jake-Icon-1.jpg" alt="Paranormal-Jake-Icon-1" border="0" width="300" height=" 300">
+                    </td></tr>
+                 <!--<tr style = "background-color:#333; margin-left:-100px">-->
+                 <!--       <td>-->
+                 <!--        <img style = "" src = "https://img.itch.zone/aW1hZ2UvMTExNTQzNi82NDQ2NTMzLnBuZw==/794x1000/e52PPR.png" width="300" height="170">-->
+                 <!--   </td></tr>                    -->
+                </table>
+            </div>
+            
+            <h1 id="version" class="font"class="centeredA"style="color:black;border:3px double yellow;text-align:center;align">I'm Mark, AKA "Developer Jake"</h1>
+
+            <br>
+            <br>
+            <hr width="50%"style="margin:auto 25%" color="#545454">
+            <p class="font" style="margin:auto 25%; background-color:#474747;">
+              <ul style="font-size:20px;margin:auto 25%; color:navy;" class = "font">
+                <b>
+<br>
+<li>I'm a Game Developer/Programmer, an Electrical Engineer as well as a Youtuber. I also make lyricless music, but mainly just for my games.</li></b>
+<br>
+<li>I'm/I've developing/developed a game called "L.I.F.E." Which is a strategy horror game based around the idea that you're several thousand feet underground, and you need to repair the establishment. <br>
+You can see the game <a href ="https://codehs.com/editor/html/415430/2637802/about.html"><u><b>HERE</b></u></a>. <br>
+I will also show a trailer for the game right below this text.</li>
+              </ul></b>
+            </p>
+            <hr width="50%"style="margin:auto 25%" color="#545454">
+            </div>
+                          <iframe style ="margin:auto 25%"width="715" height="400" frameborder=0 src='https://www.wevideo.com/embed/#2253647167' allowfullscreen scrolling="no"> ></iframe>
+  
+</body>
+    
+    
+
+</html>
