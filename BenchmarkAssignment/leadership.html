@@ -20,6 +20,41 @@
     </title>
     </head>
     <style>
+    :root{
+        --overlay-color-1: #ff0000;
+        --overlay-color-2: #0000ff;
+        --anim-duration: 2s;
+    }
+
+  /*  #gradient {
+        opacity: 0.8;
+        width: 100%;
+
+        height:100%;
+    }
+
+    #gradient:after,
+    #gradient:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    #gradient:before {
+        background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+        animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+    }
+
+    #gradient:after {
+        background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+        animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+    }
+
+    @keyframes OpacityAnim {
+        0%{opacity: 1.0}
+        100%{opacity: 0.0}
+    }*/
 
         body::-webkit-scrollbar {
           width: 12px;            
@@ -72,12 +107,12 @@
           display: block;
           color: #f2f2f2;
           padding: 30px 32px;
-            text-decoration: underline dotted;       
+            text-decoration: underline dotted transparent;       
             font-size:20px;
         }
         
         .topnav a:hover {
-          background-color: darkred;
+          background-color: yellow;
           color: black;
         }
         .container {
@@ -106,7 +141,7 @@
           background-color:rgba(255,255,255,.6);
         }        
         .topnav a.active {
-          background-color: red;
+          background-color: #b07500;
           color: white;
         }
 
@@ -151,54 +186,52 @@
       }       
     </style>
     <body id = "grad" style = "background-color:#333333; color:#d6d6d6;">
+
         <script>
-		let sound = document.getElementById("audioId");
-		sound.currentTime = 0;
-		sound.loop = true; //if you want it to restart playing automatically when it ends
-		sound.play();
+
        </script>
  
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class= "horizontal">
             <div class="topnav" id="myTopnav">
-              <img src ="https://i.ibb.co/nnL99ns/IMG-0180.jpg" id="icon-image" align=left width="80" height="80">
-                <a id = "navtext" href="download-page.html">Download Free</a>
-                <a id = "navtext" class="active" href="about.html">About</a>
-                <a id = "navtext" href="bug-reports.html">Bug Reports</a>
+              <img src ="https://i.ibb.co/nnL99ns/IMG-0180.jpg" id="icon-image" align=left width="80" height="77">
+                <a id = "navtext" href="for-hidden-genius.html">About</a>
+
+                <a id = "navtext" href="forms.html">Forms & Javascript ▽ </a>
+                <a id = "navtext" href="leadership.html" class = "active">Leadership</a>
             </div>
             <br>
             <br>
             <br>         
             <br>
             <br>
-            <hr color=#333>
-            <hr color=#333>
+            <hr color=gold>
+            <hr color=gold>
             <br>
-            <div class="container" >
+            <div class="container">
               <div class="main" style = "margin:auto">
-              	<br>
-                  <h1 style="font-size:1.5vw;color:black;text-align:center;margin:auto;">About Me   </h1>
-                  <iframe src="https://www.youtube.com/embed/NFKY4T2VkD8" title="YouTube video player" style ="margin:auto 2%"width="875" height="490" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>
-<!--                   <iframe style ="margin:auto 2%"width="875" height="490" frameborder=0 src='https://www.wevideo.com/embed/#2253647167' allowfullscreen scrolling="no"> ></iframe>
- -->                  <hr width="100%"style="margin:auto 2%" color=#ad0f03>
+                <br>
+                  <h1 style="font-size:1.5vw;color:black;text-align:center;">  </h1>
+
               </div>
 
-            <br>
             <div class="overlay">
                 
                <table style = "background-color:rgba(255,30,30,0.4); margin-left: auto;">
                     <tr style = "background-color:#333;">
                         <td>
 
-                        <img src="https://i.ibb.co/B2XJn88/IMG-0571.jpg" alt="IMG-0571" width="300" height="250">
+                        <img src="leadershipIcon.jpg" alt="IMG-0571" width="300" height="250">
                     </td></tr>
                     <tr style = "background-color:#333;">
                         <td>
-                         <img src="https://i.ibb.co/KLrddLj/IMG-0180.jpg" alt="IMG-0180" width="300" height="300">
+                         <img src="leadership2.png" alt="IMG-0180" width="300" height="300">
                     </td></tr>
                     <tr style = "background-color:#333; margin-left:-100px">
                         <td>
-                         <img src="https://i.ibb.co/fDfx1Gd/Paranormal-Jake-Icon-1.jpg" alt="Paranormal-Jake-Icon-1" border="0" width="300" height=" 300">
+ <!--                          <br>
+                          <br>
+                         <img src="https://i.ibb.co/nnL99ns/IMG-0180.jpg" alt="Paranormal-Jake-Icon-1" border="0" width="300" height=" 300"> -->
                     </td></tr>
                  <!--<tr style = "background-color:#333; margin-left:-100px">-->
                  <!--       <td>-->
@@ -207,47 +240,43 @@
                 </table>
             </div>
             
-            <h1 id="version" class="font"class="centeredA"style="text-align:center;align">Download Now!</h1>
- 
+            <h1 id="version" class="font"class="centeredA"style="color:black;text-align:center;align">LEADERSHIP</h1>
 
-        
-            <table class="centered" style ="border:10px double black;">
-                <th>
-                    <td style ="background-color:#545454; padding-bottom:20px">
-                        <iframe frameborder="0" src="https://itch.io/embed/1115436?border_width=5&amp;bg_color=323232&amp;fg_color=cf0000&amp;link_color=ae0202&amp;border_color=e17300" width="216" height="175"><a href="https://developer-jake.itch.io/life">L.I.F.E. by DeveloperJake</a></iframe>
-                        
-                    </td>
-                    <td style = "background-color:#545454; padding-bottom:20px; padding-right: 30px; padding-left:30px; padding-down:20px;"><h1>OR</h1></td>
-                    <td style ="background-color:#545454; padding-bottom:20px;border-size:20px;">
-                      <button onclick="downloadButton()" class = "button2" style="cursor:pointer;">
-                      <img src="https://img.itch.zone/aW1nLzY0NDY1MjMucG5n/360x286%23c/ejP3zB.png" width="180" height="139" style="border: 2px solid #878787;margin-top:15px;background-color:#292929;">
-                      <svg width="146" height="34" style="z-index:0; border: 1px solid transparent;border-radius: 5px;" transform="translate(0,-33)">
-                        <rect width="146" height="34" style="z-index:0; border: 1px solid transparent;margin:50%; fill:#ae0202; border-radius: 25px;"/>
-                        <text x="50%" y="50%" dominant-baseline="middle"text-anchor="middle" style="font-size:15px; bold; fill: white;  font-family: 'Trebuchet MS', sans-serif;">Download Now!</text>    
-                      </svg>
-                      </button>
-                      </a>
-
-                    </td>
-                </th>
-            </table>
             <br>
             <br>
             <hr width="50%"style="margin:auto 25%" color="#545454">
             <p class="font" style="margin:auto 25%; background-color:#474747;">
-              <u style="color:#ffeebd;">DETAILS:</u>
-              <ul style="font-size:1 v*;margin:auto 25%; color:#e8ae00;">
-                <b><li>- Average playtime for the story mode is 1-2 Days.</li>
+              <ul style="font-size:20px;margin:auto 25%; color:navy;" class = "font">
+                <b>
 <br>
-<li>- Average playtime for the entire game is about a week. (Those last few mini-games are very tricky!)</li>
+<li>In leadership, <i>hince the name,</i> we sharpened our leadership skills.</li></b>
 <br>
-<li>- The default screen resolution is 1280x720, and shouldn't be changeable, but if you do find a way to change the resolution, the UI (buttons, images and text) will glitch for 30% of the resolutions. If your custom resolution is within that margin, just change the resolution back to 1980x720 :)</li></b>
-
-              </ul>
+<li> We also learned about some other great leaders in history like Martin Luther King Jr, and we also practiced goal setting which is based around the idea that if we have multiple projects or things that we want to complete, we will be able to focus on a specific project based on its priority, and also we can see what the goal / objective for the project is.<br><br>
+<i style="font-size:12px">(Below is a picture of one of the goal setting assignments)</i>
+</li>
+              </ul></b>
             </p>
             <hr width="50%"style="margin:auto 25%" color="#545454">
-            </div>
+            <img src="thescreenshot1.png" width="950" height="750" style="margin-left:20%">
+                        <br>
+            <hr width="50%"style="margin:auto 25%" color="#545454">
+            <p class="font" style="margin:auto 25%; background-color:#474747;">
+              <ul style="font-size:20px;margin:auto 25%; color:navy;" class = "font">
+                <b>
+<br>
+<li>We also worked on a different type of project that helped us with our rythm and rhyming skills.<br><br>
+<i style="font-size:12px">(Below is a picture of one of the Rythm assignments)</i></li>
+<br>
 
+            </p>
+
+            <hr width="50%"style="margin:auto 25%" color="#545454">
+            <img src="thescreenshot2.png" width="700" height="450" >
+
+
+            </div>
+ 
+  
 </body>
     
     
